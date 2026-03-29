@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VIENNA | Coming Soon</title>
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#f7f9fb",
+              "on-tertiary-fixed": "#001f29",
+              secondary: "#00696e",
+              "secondary-fixed-dim": "#73d6dc",
+              "outline-variant": "#c2c6d1",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#9ccee4",
+              "surface-container-highest": "#e0e3e5",
+              "surface-container": "#eceef0",
+              tertiary: "#003949",
+              "on-surface": "#191c1e",
+              "on-tertiary-fixed-variant": "#154d5f",
+              "tertiary-container": "#1a5063",
+              "on-primary-fixed": "#001c38",
+              "surface-container-low": "#f2f4f6",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#a3c9ff",
+              outline: "#727781",
+              "on-primary-fixed-variant": "#004882",
+              "on-error": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#90f2f8",
+              "primary-fixed": "#d3e4ff",
+              "tertiary-fixed": "#bbe9ff",
+              "surface-bright": "#f7f9fb",
+              "surface-variant": "#e0e3e5",
+              "on-surface-variant": "#424750",
+              "inverse-surface": "#2d3133",
+              "surface-tint": "#27609d",
+              "surface-container-high": "#e6e8ea",
+              surface: "#f7f9fb",
+              "on-tertiary-container": "#90c1d7",
+              "on-primary-container": "#8abcff",
+              error: "#ba1a1a",
+              "secondary-container": "#90f2f8",
+              "primary-container": "#004b87",
+              "on-secondary-fixed-variant": "#004f53",
+              "on-secondary-container": "#007075",
+              "inverse-on-surface": "#eff1f3",
+              primary: "#003461",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#a3c9ff",
+              "surface-dim": "#d8dadc",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "on-background": "#191c1e",
+              "on-secondary-fixed": "#002021",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background font-body text-on-surface antialiased overflow-hidden"
+  >
+    <!-- Main Content -->
+    <main
+      class="relative h-screen w-full flex items-center justify-center overflow-hidden"
+    >
+      <!-- Full-screen Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          class="w-full h-full object-cover scale-105 backdrop-brightness-50"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ntAwJGl3DmPwQnQEcS-NZjQBq29KwHhyRMAXu-Y0iw9dETUCoScswk4fR6HAEL2FOEtCLGeC_XKfAz45cjeS_f_Xq6kIFzS3zFcJ0weCPtSwXmDhm2Z-qkHHMc7pmi4M89PGqdD4-56BVawJk-34TgB3CX3xxoaH4C9lIVQpjo6hmQL83xsepkk1tVBTgnFViP-XaiFK0JE2H3sOomuZg7KkoPJ6v_wsFLW08DsquLaW86Z7pZn3mZpsSrIM_F95xLw3hOo5xpY"
+          alt="Carpet"
+        />
+        <div class="absolute inset-0 bg-black/10"></div>
+      </div>
+      <!-- Elegant Central Glassmorphism Box -->
+      <section class="relative z-10 px-6 w-full max-w-xl">
+        <div
+          class="glass-panel rounded-[2.5rem] p-12 md:p-20 text-center shadow-2xl"
+        >
+          <!-- Headline -->
+          <h1
+            class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-8"
+          >
+            Erstklassige Pflege für Ihr Zuhause.
+            <span class="text-primary">Demnächst verfügbar.</span>
+          </h1>
+          <!-- Action Button (Disabled State) -->
+          <div>
+            <button
+              class="bg-white/60 text-slate-400 cursor-not-allowed px-12 py-4 rounded-full font-bold text-lg w-full md:w-auto border border-white/50 backdrop-blur-sm shadow-sm transition-all"
+              disabled
+            >
+              Buchen Sie Ihren Service
+            </button>
+            <p
+              class="mt-6 text-[10px] font-bold text-primary/60 tracking-[0.2em] uppercase"
+            >
+              Reservierungen sind bald möglich
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
